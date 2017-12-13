@@ -1,3 +1,9 @@
+// ==UserScript==
+// @name     Trello ticket summarizer
+// @version  1
+// @match https://trello.com/*
+// @require https://code.jquery.com/jquery-3.2.1.min.js
+// ==/UserScript==
 $(function(){
     if($('span.board-header-btn-text').html()==='Development'){
         $('.js-list.list-wrapper').each(function(index){
