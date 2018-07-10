@@ -1,4 +1,4 @@
-// ==UserScript==
+// Here You can type your custom JavaScript...// ==UserScript==
 // @name     Trello ticket summarizer
 // @version  1
 // @match https://trello.com/*
@@ -6,6 +6,7 @@
 // ==/UserScript==
 $(function(){
     if($('span.board-header-btn-text').html()==='Development'){
+        $('.list-header.js-list-header').css('flex-direction','column');
         $('.js-list.list-wrapper').each(function(index){
             $(this).find('.list-card');
             var mainTitle = $(this).find(".list-header-name.mod-list-name.js-list-name-input").val()
